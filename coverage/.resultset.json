@@ -2,7 +2,16 @@
   "RSpec": {
     "coverage": {
       "/Users/student/Projects/tech-tests/bank-kata/spec/account_spec.rb": [
+        null,
+        null,
         1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null,
         1,
         1,
@@ -13,17 +22,21 @@
         null
       ],
       "/Users/student/Projects/tech-tests/bank-kata/lib/account.rb": [
+        null,
+        null,
         1,
         1,
         null,
         1,
+        2,
+        null,
+        null,
         1,
-        null,
-        null,
+        1,
         null,
         null
       ]
     },
-    "timestamp": 1561980714
+    "timestamp": 1561986057
   }
 }
