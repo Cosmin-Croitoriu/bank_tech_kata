@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 class Account
-  attr_reader :balance
+  INSUFICIENT_FUNDS = 'Insuficient funds in your account'
+  attr_reader :balance, :sum
 
   def initialize
     @balance = 0
@@ -12,6 +13,14 @@ class Account
   end
 
   def withdraw(sum)
+    raise INSUFICIENT_FUNDS if insuficient_funds?(sum)
+
     @balance -= sum
+  end
+
+  private
+
+  def insuficient_funds?(sum)
+    (balance - sum).negative?
   end
 end
