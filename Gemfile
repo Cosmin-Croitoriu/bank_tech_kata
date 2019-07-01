@@ -1,5 +1,8 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
 
-gem "rubocop"
-gem "rspec"
+source 'https://rubygems.org'
 
+gem 'rspec'
+gem 'rubocop'
+gem 'simplecov', require: false, group: :test
+gem 'simplecov-console'
