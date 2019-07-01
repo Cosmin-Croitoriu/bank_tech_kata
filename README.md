@@ -23,3 +23,5 @@ An Account class that initialises a new account with a balance equal to 0.
 The Account class:
 
 - has a deposit method that takes an integer as an argument and it adds it to your balance.
+
+ - has a withdrawal method that takes an integer as an argument and it subtracts it from your balance if the integer is lower than the balance (checked by the insufficient_funds? method).

@@ -31,7 +31,7 @@
         1,
         1,
         2,
-        null,
+        1,
         null,
         null,
         null
@@ -53,6 +53,7 @@
         null,
         1,
         2,
+        null,
         1,
         null,
         null,
@@ -62,8 +63,31 @@
         2,
         null,
         null
+      ],
+      "/Users/student/Projects/tech-tests/bank-kata/spec/transaction_spec.rb": [
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/student/Projects/tech-tests/bank-kata/lib/transaction.rb": [
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1561989286
+    "timestamp": 1561994013
   }
 }
