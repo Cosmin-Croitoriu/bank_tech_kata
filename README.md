@@ -14,3 +14,12 @@ date || credit || debit || balance
 13/01/2012 || 2000.00 || || 3000.00
 10/01/2012 || 1000.00 || || 1000.00
 
+Approach 
+
+Test driven development - all the functionality is constructed using TDD
+
+An Account class that initialises a new account with a balance equal to 0.
+
+The Account class:
+
+- has a deposit method that takes an integer as an argument and it adds it to your balance.

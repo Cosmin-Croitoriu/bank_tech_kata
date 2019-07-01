@@ -9,10 +9,18 @@ describe Account do
     end
   end
 
-  describe'#deposit' do
+  describe '#deposit' do
     it 'allows you to deposit funds in your account' do
       subject.deposit(100)
       expect(subject.balance).to be 100
+    end
+  end
+
+  describe '#withdraw' do
+    it 'allows you to withdraw funds from your account' do
+      subject.deposit(100)
+      subject.withdraw(50)
+      expect(subject.balance).to be 50
     end
   end
 end
