@@ -33,4 +33,5 @@ The Transaction class:
 
 The Statement class:
   - I have created a 'Statement' class that will be responsible for printing the transactions in reverse order.
+  - I also included a top text method for a clearer display of the statement
 
