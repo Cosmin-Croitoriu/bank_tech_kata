@@ -15,9 +15,9 @@ describe Transaction do
       log = Transaction.new
       log.deposit_transaction('02/07/2019', 500, 600)
       expect(log.transaction_log).to eq(
-        credit: 500,
+        credit: 500.00,
         debit: '    ',
-        balance: 600,
+        balance: 600.00,
         date: '02/07/2019'
       )
     end
@@ -29,8 +29,8 @@ describe Transaction do
       log.withdraw_transaction('02/07/2019', 500, 600)
       expect(log.transaction_log).to eq(
         credit: '    ',
-        debit: 500,
-        balance: 600,
+        debit: 500.00,
+        balance: 600.00,
         date: '02/07/2019'
       )
     end
