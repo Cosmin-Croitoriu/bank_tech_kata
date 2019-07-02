@@ -14,9 +14,9 @@ class Transaction
     @transaction[:date] = date
   end
 
-  def withdraw_transaction(date = Time.now.strftime('%d/%m/%Y'), credit, balance)
+  def withdraw_transaction(date = Time.now.strftime('%d/%m/%Y'), debit, balance)
     @transaction[:credit] = '      '
-    @transaction[:debit] = credit
+    @transaction[:debit] = debit
     @transaction[:balance] = balance
     @transaction[:date] = date
   end
