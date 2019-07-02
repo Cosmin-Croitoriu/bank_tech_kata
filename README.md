@@ -25,3 +25,11 @@ The Account class:
 - has a deposit method that takes an integer as an argument and it adds it to your balance.
 
  - has a withdrawal method that takes an integer as an argument and it subtracts it from your balance if the integer is lower than the balance (checked by the insufficient_funds? method).
+
+ The Transaction class :
+
+    - I have implemented the 'Transaction' class in order to print the upcoming statements in the required format
+    - The methods 'deposit_transaction' and 'withdraw_transaction' have distinctive format and will be used to print the statement.
+
+    
+
