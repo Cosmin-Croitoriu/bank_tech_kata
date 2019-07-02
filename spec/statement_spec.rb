@@ -3,7 +3,6 @@
 require 'statement'
 
 describe Statement do
-
   before(:each) do
     @transaction1 = {
       credit: '      ',
@@ -29,12 +28,14 @@ describe Statement do
     it 'adds transactions into the statement' do
       subject.add_transactions(@transaction1)
       expect(subject.statement).to eq(
-      [{
-        date: '02/07/2019',
-        credit: '      ',
-        debit: 500,
-        balance: 600
-      }])
+      [
+        {
+          date: '02/07/2019',
+          credit: '      ',
+          debit: 500,
+          balance: 600
+        }
+      ])
     end
   end
 

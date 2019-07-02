@@ -27,7 +27,8 @@ describe Account do
       subject.balance
       sum = 150
       expect { subject.withdraw(sum) }.to raise_error(
-      'Insuficient funds in your account')
+        'Insuficient funds in your account'
+      )
     end
   end
 end
