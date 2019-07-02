@@ -35,3 +35,8 @@ The Statement class:
   - I have created a 'Statement' class that will be responsible for printing the transactions in reverse order.
   - I also included a top text method for a clearer display of the statement
 
+In the end I have used Dependency Injection to use 'Statment' and 'Transaction' classes into the 'Account' class.
+![Account Statement](./image/AccStatement.png)
+
+
+

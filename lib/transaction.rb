@@ -1,23 +1,23 @@
 # frozen_string_literal: true
 
 class Transaction
-  attr_reader :transaction
+  attr_reader :transaction_log
 
   def initialize
-    @transaction = {}
+    @transaction_log = {}
   end
 
   def deposit_transaction(date = Time.now.strftime('%d/%m/%Y'), credit, balance)
-    @transaction[:credit] = credit
-    @transaction[:debit] = '      '
-    @transaction[:balance] = balance
-    @transaction[:date] = date
+    @transaction_log[:credit] = credit
+    @transaction_log[:debit] = '    '
+    @transaction_log[:balance] = balance
+    @transaction_log[:date] = date
   end
 
   def withdraw_transaction(date = Time.now.strftime('%d/%m/%Y'), debit, balance)
-    @transaction[:credit] = '      '
-    @transaction[:debit] = debit
-    @transaction[:balance] = balance
-    @transaction[:date] = date
+    @transaction_log[:credit] = '    '
+    @transaction_log[:debit] = debit
+    @transaction_log[:balance] = balance
+    @transaction_log[:date] = date
   end
 end

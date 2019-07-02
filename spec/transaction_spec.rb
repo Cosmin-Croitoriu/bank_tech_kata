@@ -14,7 +14,7 @@ describe Transaction do
     it 'creates a log for a deposit' do
       log = Transaction.new
       log.deposit_transaction('02/07/2019', 500, 600)
-      expect(log.transaction).to eq(credit: 500, debit: '      ', balance: 600, date: '02/07/2019')
+      expect(log.transaction_log).to eq(credit: 500, debit: '    ', balance: 600, date: '02/07/2019')
     end
   end
 
@@ -22,7 +22,7 @@ describe Transaction do
     it 'creates a log for a withdraw from the account' do
       log = Transaction.new
       log.withdraw_transaction('02/07/2019', 500, 600)
-      expect(log.transaction).to eq(credit:'      ', debit: 500, balance: 600, date: '02/07/2019')
+      expect(log.transaction_log).to eq(credit: '    ', debit: 500, balance: 600, date: '02/07/2019')
     end
   end
 end
