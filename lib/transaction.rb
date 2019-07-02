@@ -9,7 +9,7 @@ class Transaction
 
   def deposit_transaction(date = Time.now.strftime('%d/%m/%Y'), credit, balance)
     @transaction[:credit] = credit
-    @transaction[:debit] = '      ' 
+    @transaction[:debit] = '      '
     @transaction[:balance] = balance
     @transaction[:date] = date
   end
